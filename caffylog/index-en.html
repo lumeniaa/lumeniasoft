@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffylog - Caffeine and Sleep Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #3e2723;
+            background: linear-gradient(135deg, #f5f0ec 0%, #e8ddd3 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6d4c41 0%, #4e342e 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #6d4c41;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #6d4c41 0%, #4e342e 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #6d4c41;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #6d4c41;
+            margin-top: 40px;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .lang-switch a {
+            color: #6d4c41;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lang-switch">
+        <a href="../">Türkçe</a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>☕ Caffylog</h1>
+            <p>Caffeine and Sleep Tracker</p>
+        </header>
+        <div class="hero">
+            <h2 style="color: #6d4c41; font-size: 2.5em; margin-bottom: 20px;">Track Your Daily Caffeine Intake</h2>
+            <p style="font-size: 1.2em; color: #5d4037;">
+                Manage your caffeine intake smartly with Caffylog, protect your health, and sleep better!
+            </p>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Smart Caffeine Tracking</h3>
+                <p>Espresso, Americano, Latte, Cappuccino, and more. Real-time caffeine level calculation and active
+                    caffeine display.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Multiple Limit System</h3>
+                <p>Daily caffeine, heart health, and sleep quality limits. Custom limit setting feature.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">😴</div>
+                <h3>Sleep Tracking</h3>
+                <p>Daily sleep duration logging, quality rating, and sleep-based caffeine recommendations.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Detailed Statistics</h3>
+                <p>Weekly and monthly charts, average consumption, and trend analysis.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏠</div>
+                <h3>Home Screen Widget</h3>
+                <p>Daily caffeine amount, coffee count, and quick access widget.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Multi-Language Support</h3>
+                <p>Turkish and English language options with user-friendly interface.</p>
+            </div>
+        </div>
+        <div class="cta">
+            <h2>Download Now!</h2>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">
+                Start your healthy caffeine consumption journey
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.lumeniasoft.caffylog" class="btn">
+                Download from Google Play
+            </a>
+        </div>
+        <footer>
+            <p>&copy; 2026 LumeniaSoft. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="en/privacy" style="color: #6d4c41; margin: 0 15px;">Privacy Policy</a> |
+                <a href="mailto:caffylogapp@lumeniasoft.com" style="color: #6d4c41; margin: 0 15px;">Contact</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
